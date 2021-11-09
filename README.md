@@ -119,4 +119,121 @@ int main(){
 	}
 	return 0;
 }				 
-				      
+
+				  
+/Nested Loop Desecending 
+ #include <iostream>
+#include <string>
+using namespace std;
+
+
+
+int main(){
+
+	int i;
+	int j;
+	for (i = 0; i < 7; i++) {
+		for (j = i; j < 7; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
+
+/Nested Loop Ascending
+	#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+int main(){
+
+	int i;
+	int j;
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j <= i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
+	
+/Nested loop Rising and Falling
+	#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+int main(){
+
+	int i;
+	int j;
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j <= i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (i = 0; i < 4; i++) {
+		for (j = i; j < 4; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
+	
+/Nested loop Cubes
+	#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+
+int main() {
+
+
+	int i;
+	int user;
+	cout << "Range for cubes" << endl;
+	cout << "Enter where to start the cube: "; cin >> i;
+	cout << "\nEnter where to end the cube: "; cin >> user;
+	if (cin.fail()) {
+		system("cls");
+		cout << "Error";
+	}
+	for (i; i <= user; i++) {
+		cout << "Number is :" << i << " and the cube of " << i << " is " << pow(i, 3) << endl;
+	}
+
+	return 0;
+}
+				       
+//Nested loop Find the 9s
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+
+int main(){
+
+
+	int i;
+	int result =0;
+	for (i = 100; i <= 200; i++) {
+		if (i % 9 == 0) {
+			cout << i << endl;
+			result += i;
+		}
+	}
+	cout << "add all: " << result;
+	return 0;
+}										     
